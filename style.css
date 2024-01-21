@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.landing-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.landing {
+    width: 100%;
+    height: 76vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(assets/header-image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 8%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.lang-box {
+    text-decoration: none;
+    list-style: none;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 6px 36px;
+    width: 126px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.lang-box img {
+    width: 17px;
+}
+
+.lang-box select {
+    border: none;
+    color: #fff;
+    background: none;
+
+}
+
+nav div {
+    display: flex;
+    gap: 20px
+}
+
+nav button {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: #fff;
+    font-weight: 600;
+    height: 32px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button:hover {
+    background-color: #c11119;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    font-size: larger;
+    gap: 15px;
+}
+
+.signup {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    max-width: 557px;
+}
+
+.signup input {
+    flex: 1;
+    background: none;
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 336.75px;
+    height: 56px;
+    font-size: 1.25rem;
+    background: rgba(191.25, 191.25, 191.25, 0.3);
+
+}
+
+.signup input::placeholder {
+    font-size: 1.25rem;
+    color: #fff;
+    position: relative;
+    left: 15px;
+    opacity: 1;
+}
+
+.signup input:focus::placeholder {
+    position: relative;
+    font-size: 1rem;
+    bottom: 10px;
+    transition: all 0.275s ease;
+    opacity: 1;
+}
+
+.signup button {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: #fff;
+    font-weight: 600;
+    font-size: larger;
+    height: 54px;
+    width: 207.250px;
+    padding-inline: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup button:hover {
+    background-color: #c11119;
+}
+
+.gray-space {
+    background-color: #232323;
+    height: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+.features .feature-box {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin: 100px;
+}
+
+.feature-box img {
+    width: 650px;
+}
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.faq h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 50px 5px 15px;
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shown-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    height: 84px;
+    width: 1280.660px;
+    font-size: 1.5rem;
+    padding: 24px;
+    gap: 00px;
+}
+
+.hidden-content {
+    display: none;
+}
+
+.faq-box:hover .hidden-content {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d;
+    width: 1280.660px;
+    font-size: 1.5rem;
+    padding: 24px;
+}
+
+.faq-box:hover .shown-content a {
+    transition: 0.11s all ease-in;
+
+    rotate: 45deg;
+}
+
+.faq-box:hover .shown-content {
+    background-color: #414141;
+
+}
+
+.faq-box {
+    flex-direction: column;
+}
+
+.faq p {
+    font-size: 1.25rem;
+}
+
+a {
+    color: #fff;
+}
+
+.anchor {
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.faq form {
+    width: 557px;
+}
+
+.footer {
+    font-size: 16px;
+}
+
+.footer {
+    padding: 50px 15% 10px;
+    color: #777;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0px;
+    display: flex;
+
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .col a {
+    color: #777;
+    font-size: 14px;
+
+}
